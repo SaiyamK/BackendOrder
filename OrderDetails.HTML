@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- [comment] -->
+        <!-- Setting Viewports, Importing Bootstrap and External CSS file -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </head>
+
+    <body style="background-color: #f8fcfc;">
+
+        <header>
+            <!-- header-logo,icons,account   -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col" style="background-color: black; height: 70px;">
+                        <!-- company logo with link -->
+                        <a href=OrderPage.HTML>
+                            <img class="img-responsive" src="xenon-logo.png" alt="logo" height="50" width="130" style="margin:10px">
+                        </a>
+                        <!-- icons-avatar,help,notifications,app navigator -->
+                        <a href="Login.HTML">
+                            <img src="avatar.png" alt="Avatar" class="avatar float-right growmore">
+                        </a>
+                        <a href="ContactUs.HTML">
+                        <img src="https://img.icons8.com/ios-glyphs/26/ffffff/help.png" class="float-right growmore" style="margin:20px 10px 0px 40px">
+                        </a>
+                        <img src="https://img.icons8.com/material-outlined/26/ffffff/menu--v1.png" class="float-right growmore" style="margin:20px 10px 0px 40px"> 
+                    </div>
+                </div>
+            </div>
+        </header>   
+        <bar>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col" style="background-color: #384c5c; height: 50px;">
+                        <nav class="navbar-expand" style="margin:5px">
+                            <!-- Links -->
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item" id="underlineli">
+                                    <a class="nav-link grow" href="OrderPage.HTML" style="color:white"><strong>MY ORDERS</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link grow" href="WhatsNew.HTML" style="color:white"><strong>WHAT'S NEW</strong><div class="noticircle">2   </div></a>
+                                </li>
+                            </ul>
+                          </nav>
+                </div>
+            </div>
+        </bar>
+        <info>
+            <!-- Order History Logo and Search,Filter-->
+            <div class="container-fluid d-none d-md-block">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Noodles-and-Company-Logo.png" alt="ordercompanylogo" height="100" width="160">
+                    </div>
+                    <div class="col-7 d-none d-lg-block">
+                        <p class ="para grow">Open Orders</p><p class="para">&nbsp;&nbsp;|&nbsp;&nbsp;</p><p class ="para grow">SC Sitecheck (49)</p>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <form id="form">
+                            <input type="search" placeholder="Search...">
+                            <button>
+                              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <button id="filterbutton">
+                            <img src="https://img.icons8.com/ios/50/000000/filter.png" alt="filtericon" height="20" width="20">
+                            <p class="para" style="margin-top: 10px;">&nbsp;&nbsp;&nbsp;Filter</p>
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </info>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-2 d-none d-xl-block wrapper">
+                    <!-- Sidebar -->
+                    <nav id="sidebar">
+                        <ul class="list-unstyled components">   
+                            <li>
+                                <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#open" data-toggle="collapse" class="dropdown-toggle">Open Orders</a></button>
+                                <ul class="collapse list-styled components" id="open">
+                                    <li>
+                                        <button type="button" class="btn btn-outline-primary btn-block active" style="background-color: #e8f4fc; text-align: left; border: 2px; border-radius: 5px;"><div class="vl"></div><a href="#" class="text">New Orders</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">SC Available to Schedule</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-primary btn-block active" style="background-color: #e8f4fc; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">Sitecheck Scheduled</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">Change Order</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">On Order</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-primary btn-block active" style="background-color: #e8f4fc; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">Delivered/LW</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">Door Received</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">Installed/LW</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">Service Form Sent</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">Closed</a></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-outline-primary btn-block active" style="background-color: #e8f4fc; text-align: left; border: 2px; border-radius: 5px;"><a href="#" class="text">Payment</a></button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#completed" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Completed Orders</a></button>
+                                <ul class="collapse list-styled components" id="completed">
+                                    <li>
+                                        <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><div class="v2"></div><a href="#" class="text">Order History</a></button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><a href="#cancelled" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cancelled Orders</a></button>
+                                <ul class="collapse list-styled components" id="cancelled">
+                                    <li>
+                                        <button type="button" class="btn btn-outline-secondary btn-block active" style="background-color: #ececec; text-align: left; border: 2px; border-radius: 5px;"><div class="v2"></div><a href="#" class="text">Order History</a></button>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+            </aside>
+
+
+
+            <main>
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <!-- Table with Data -->
+                <div class="col">
+                    
+                    <table class="table table-hover table-responsive">
+                        <thead> 
+                        <tr>
+                        <th>PO #</th>
+                        <th style="text-align: left;">CUSTOMER DETAILS</th>
+                        <th style="text-align: left;">ORDER TYPE</th>
+                        <th>CITY</th>
+                        <th>PHONE #</th>
+                        <th>STATUS</th>
+                        <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Bemant Jared<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>SC Sitecheck</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        
+                        </tr>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Johnson<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>Order Sent to Clopay</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/document.png"/><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        </tr>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Bemant Jared<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>SC Sitecheck</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        
+                        </tr>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Johnson<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>Order Sent to Clopay</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/document.png"/><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        </tr>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Bemant Jared<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>SC Sitecheck</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        
+                        </tr>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Johnson<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>Order Sent to Clopay</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/document.png"/><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        </tr>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Bemant Jared<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>SC Sitecheck</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        
+                        </tr>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Johnson<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>Order Sent to Clopay</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/document.png"/><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        </tr>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Bemant Jared<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>SC Sitecheck</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        
+                        </tr>
+                        <tr>
+                        <td class="grow"><a href=Reschedule.HTML>42521983</a></td>
+                        <td class="tabletext">Johnson<br>144 Curt Shores,50, Madison Avenue, Hixson 42040</td>
+                        <td class="tabletext">Garage Door Install</td>
+                        <td>Hixson</td>
+                        <td>123 &nbsp; 456 &nbsp; 7890</td>
+                        <td>Order Sent to Clopay</td>
+                        <td><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/document.png"/><img class="growmore" src="https://img.icons8.com/material-outlined/24/000000/clock--v1.png" alt="clock" style="padding: 0px 20px 0px 0px; float: right;"></td>
+                        </tr>
+                        </tbody>        
+                    </table>
+                </div>
+            </div>
+            </div>  
+
+        </main>
+        <foot>
+
+        </foot>
+    </body>
+</html>

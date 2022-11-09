@@ -1,0 +1,293 @@
+ /* body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  /*overflow-x: hidden; /* Hide horizontal scrollbar */
+/*}*/
+
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    margin-top: 15px;
+    margin-left: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .noticircle {
+    background: #fbcb07;
+    margin-left: 10px;
+    border-radius: 50%;
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    width: 20px;
+  }
+
+  #underlineli {
+    border-bottom: 5px solid #fbcb07;
+  }
+
+  .grow {
+    transition: all .2s ease-in-out;
+  }
+  .grow:hover { 
+    transform: scale(1.1); 
+  }
+
+  .growmore {
+    transition: all .4s ease-in-out;
+  }
+  .growmore:hover { 
+    transform: scale(1.3); 
+  }
+
+  .para {
+    display: inline-block;
+    margin-top: 40px;
+    font-size:19px;
+    color: #384c5c;
+    font-weight: bold;
+  }
+
+  form {
+    background-color: grey;
+    width: 300px;
+    height: 44px;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+  svg {
+    color: #fff;
+    fill: currentColor;
+    width: 50px;
+    height: 45px;
+    padding: 10px;
+  }
+
+  #filterbutton {
+    margin-top: 30px;
+    border-radius: 5px;
+    display: flex;
+    color: #384c5c;
+    align-items: center;
+  }
+
+  .text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: #f8fcfc;
+    color: black;
+    transition: all 0.3s;
+  }
+
+  #sidebar .sidebar-header {
+    padding: 20px;
+    background: black;
+  }
+
+  #sidebar ul p {
+      padding: 10px;
+  }
+
+  #sidebar ul li a {
+      padding: 10px;
+      font-size: 1.1em;
+      display: block;
+  }
+
+  ul ul a {
+      font-size: 0.9em !important;
+      padding-left: 30px !important;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:active {
+    font-weight: bold;
+  }
+
+  a:hover {
+    font-weight: bold;
+    color: black;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 136%;
+  }
+  
+  td, th {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .tabletext {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  /*.vl {
+    border-left: 4px solid #bbb;
+    height: 623px;
+    position: fixed;
+    left: 2.75%;
+    top: 27%;
+    animation: draw-line1 3s;
+  }
+  
+  @keyframes draw-line1 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 623px;
+    }
+  }*/
+
+  .headertext {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .btns {
+    padding: 10px 20px 15px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 25px;
+    width:125px;
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+}
+
+.reschedulediv {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+
+
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.events li { 
+  display: flex; 
+  color: #999;
+}
+
+.events time { 
+  position: relative;
+  padding: 0 1.5em;  }
+
+.events time::after { 
+   content: "";
+   position: absolute;
+   z-index: 2;
+   right: 0;
+   top: 0;
+   transform: translateX(50%);
+   border-radius: 50%;
+   background: #fff;
+   border: 1px #ccc solid;
+   width: .8em;
+   height: .8em;
+}
+
+
+.events span {
+  padding: 0 1.5em 1.5em 1.5em;
+  position: relative;
+}
+
+.events span::before {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   left: 0;
+   height: 100%;
+   border-left: 1px #ccc solid;
+}
+
+.events strong {
+   display: block;
+   font-weight: bolder;
+}
+
+.events { margin: 1em; width: 50%; }
+.events, 
+.events *::before, 
+.events *::after { box-sizing: border-box; font-family: arial; }
+
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+.formclass {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+form label {
+  margin: 5px 10px 5px 0;
+}
+form input {
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+}
+
+form button:hover {
+  background-color: rgb(113, 65, 225);
+}

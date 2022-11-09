@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- [comment] -->
+        <!-- Setting Viewports, Importing Bootstrap and External CSS file -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </head>
+
+    <body style="background-color: #f8fcfc;">
+
+        <header>
+            <!-- header-logo,icons,account   -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col" style="background-color: black; height: 70px;">
+                        <!-- company logo with link -->
+                        <a href=OrderPage.HTML>
+                            <img class="img-responsive" src="xenon-logo.png" alt="logo" height="50" width="130" style="margin:10px">
+                        </a>
+                        <!-- icons-avatar,help,notifications,app navigator -->
+                        <a href="Login.HTML">
+                            <img src="avatar.png" alt="Avatar" class="avatar float-right growmore">
+                        </a>
+                        <a href="ContactUs.HTML">
+                        <img src="https://img.icons8.com/ios-glyphs/26/ffffff/help.png" class="float-right growmore" style="margin:20px 10px 0px 40px">
+                        </a>
+                        <img src="https://img.icons8.com/material-outlined/26/ffffff/menu--v1.png" class="float-right growmore" style="margin:20px 10px 0px 40px"> 
+                    </div>
+                </div>
+            </div>
+        </header>   
+        <div style="display: inline-block;">
+        <h1>Contact Us!</h1>
+            <form class="formclass">
+            <label for="Name">Name:</label>
+            <input type="Name" id="Name" placeholder="Enter Name" name="Name" />
+            <label for="Phone">Phone:</label>
+            <input type="Phone" id="Phone" placeholder="Enter Phone" name="Phone"/>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email" name="email" />
+            <label for="Message">Message:</label>
+            <input type="Message" id="Message" placeholder="Enter Message" name="Message"/>
+            <button type="submit">Submit</button>
+            </form> 
+        </div>
+    </body>
+
+</html>
